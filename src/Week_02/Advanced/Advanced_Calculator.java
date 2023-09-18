@@ -1,3 +1,5 @@
+//this program allows you to make some simple calculations.
+
 import java.util.Scanner;
 
 public class Advanced_Calculator {
@@ -17,7 +19,7 @@ public class Advanced_Calculator {
         System.out.println("Result "+result);
 
     }
-
+        // this method allows you to calculate area and perimeter of a rectangle
     static void rectangle(){
         Scanner scan = new Scanner(System.in);
         System.out.println("1st Edge of Rectangle : ");
@@ -33,7 +35,7 @@ public class Advanced_Calculator {
 
 
     }
-
+        // this method allows you to calculate sum
 
     static void plus() {
         Scanner scan = new Scanner(System.in);
@@ -49,7 +51,8 @@ public class Advanced_Calculator {
         }
         System.out.println("Result : " + result);
     }
-
+        // this method allows you to calculate subtractions
+    
     static void minus() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Number of entry :");
@@ -69,6 +72,7 @@ public class Advanced_Calculator {
         System.out.println("Result : " + result);
     }
 
+        // this method allows you to calculate multiplication
     static void times() {
         Scanner scan = new Scanner(System.in);
         int number, result = 1, i = 1;
@@ -90,6 +94,8 @@ public class Advanced_Calculator {
 
         System.out.println("Result : " + result);
     }
+
+    // this method allows you to calculate division
 
     static void divided() {
         Scanner scan = new Scanner(System.in);
@@ -114,6 +120,7 @@ public class Advanced_Calculator {
         System.out.println("Result : " + result);
     }
 
+        // this method allows you to calculate exponent
     static void power() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Number :");
@@ -128,6 +135,8 @@ public class Advanced_Calculator {
 
         System.out.println("Result : " + result);
     }
+
+        // this method allows you to calculate factorial
 
     static void factorial() {
         Scanner scan = new Scanner(System.in);
