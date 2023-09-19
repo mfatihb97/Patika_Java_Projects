@@ -15,7 +15,7 @@ public class Prime_Numbers {
                 System.out.print(i);
             }
 
-       }
+        }
 
 
 
