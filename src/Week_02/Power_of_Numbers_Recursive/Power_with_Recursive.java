@@ -7,13 +7,13 @@ public class Power_with_Recursive{
 
         if (power==0){
             return 1;
-        }return base*exponent(base,power-1);
+        }return base*exponent(base,power-1);                       //re-enter the method inside method like loops so it will run until power reaches 0
 
 
     }
 
 
-    public static void main(String[] args) {    //simply print our method
+    public static void main(String[] args) {    
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number :");
         int base = input.nextInt();
