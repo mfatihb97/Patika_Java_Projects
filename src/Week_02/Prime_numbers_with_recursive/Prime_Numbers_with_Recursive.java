@@ -1,14 +1,11 @@
 //this project creates a method to decide whether a number is prime or not.
-import java.util.Scanner;
 package Week_02.Prime_Numbers_with_Recursive;
+import java.util.Scanner;
+
 public class Prime_Numbers_with_Recursive {
 
 
-    static void isPrime(){
-
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter a number to check if it's prime or not : ");
-        int a = input.nextInt();
+    static void isPrime(int a){
 
         if (a==2 || a==3 || a == 5 || a ==7){            // they are prime numbers we exclude them
             System.out.println(a+" is prime.");
@@ -21,7 +18,9 @@ public class Prime_Numbers_with_Recursive {
 
 
     public static void main(String[] args) {
-        isPrime();
-
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter a number to check if it's prime or not : ");
+        int a = input.nextInt();
+        isPrime(a);
     }
 }
