@@ -1,26 +1,27 @@
 //this project help us to better understand recursive method and calculates power of numbers enter by user
-
+package Power_with_Recursive;
 import java.util.Scanner;
 public class Power_with_Recursive{
 
-    static void exponent(){                        //static called because main method is also static
-        
-        Scanner input = new Scanner(System.in);    
-        System.out.println("Enter a number :");
-        int n1 = input.nextInt();
-        System.out.println("Enter exponent of the number :");
-        int n2 = input.nextInt();
-        int result=1;
+    static int exponent(int base,int power){                        //static called because main method is also static
 
-        for (int i=1;i<=n2;i++){                  //exponent calculation
-            result*=n1;
-        }
-        System.out.println("Result is : "+result);
+        if (power==0){
+            return 1;
+        }return base*exponent(base,power-1);
+
+
     }
 
 
     public static void main(String[] args) {    //simply print our method
-        exponent();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number :");
+        int base = input.nextInt();
+        System.out.println("Enter power of the number :");
+        int power = input.nextInt();
+        exponent(base,power);
+        System.out.println("Result is :"+exponent(base,power));
+
 
     }
 
