@@ -1,4 +1,4 @@
-package Week_02.Prime_numbers_with_recursive;
+//this project creates a method to decide whether a number is prime or not.
 import java.util.Scanner;
 
 public class Prime_Numbers_with_Recursive {
@@ -10,9 +10,9 @@ public class Prime_Numbers_with_Recursive {
         System.out.println("Please enter a number to check if it's prime or not : ");
         int a = input.nextInt();
 
-        if (a==2 || a==3 || a == 5 || a ==7){
+        if (a==2 || a==3 || a == 5 || a ==7){            // they are prime numbers we exclude them
             System.out.println(a+" is prime.");
-        }else if(a%2==0 || a%3==0 || a%5==0 || a%7==0){
+        }else if(a%2==0 || a%3==0 || a%5==0 || a%7==0){ // least commons for general
             System.out.println(a+" is not prime.");
         }else {
             System.out.println(a+" is prime.");
