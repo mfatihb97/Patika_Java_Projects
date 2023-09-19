@@ -1,6 +1,6 @@
 //this project creates a method to decide whether a number is prime or not.
 import java.util.Scanner;
-
+package Week_02.Prime_Numbers_with_Recursive;
 public class Prime_Numbers_with_Recursive {
 
 
