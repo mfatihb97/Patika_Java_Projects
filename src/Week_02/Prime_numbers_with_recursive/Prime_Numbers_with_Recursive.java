@@ -7,15 +7,15 @@ public class Prime_Numbers_with_Recursive {
 
     static boolean isPrime(int number  ,int divisor){
 
-        if (number==divisor){
+        if (number==divisor){                            //here divisior has value 2 initially and 2 is only even number which is prime so we pass it
             return true;
         }
 4
-        if (number%divisor==0){
+        if (number%divisor==0){                         //if the number can be divided by 2 then it's not prime and code ends
             return false;
         }
         else {
-            return  isPrime(number,divisor+1);
+            return  isPrime(number,divisor+1);        //divisor incremented by 1 to check all the numbers till number==divisor on the code above
         }
 
     }
