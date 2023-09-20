@@ -19,12 +19,13 @@ public class Employee {                                                        /
    double tax(){                                                                // method for calculating tax applied
         double tax;
         double tax_rate = 0.03;
-        if (salary<1000){
-            return salary;
-        }
-        else{
+        if (salary > 1000){
             tax=salary*tax_rate;
             return tax;
+        }
+        else{
+            return 0;
+
         }
 
    }
