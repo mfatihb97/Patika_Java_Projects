@@ -9,8 +9,8 @@ public class Game {
     public void start() {
         System.out.println("Welcome the Adventure Game ! ");
         System.out.println("Nickname : ");
-        //String playerName = input.nextLine();
-        Player player = new Player("Batur");
+        String playerName = input.nextLine();
+        Player player = new Player(playerName);
         System.out.println("Dear " + player.getName() + " welcome to this world !");
         System.out.println("Select your class to get into this new dimension ! ");
         player.selectClass();
