@@ -1,6 +1,4 @@
-package Week_04.Advanture_Game;
-
-import java.util.Random;
+package Week_04.Advanture_Game.Adenture_Game;
 
 public abstract class Monster {
     private String name;

@@ -1,4 +1,4 @@
-package Week_04.Advanture_Game;
+package Week_04.Advanture_Game.Adenture_Game;
 
 public class Armory {
     private int id;

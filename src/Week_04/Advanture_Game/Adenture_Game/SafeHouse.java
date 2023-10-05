@@ -1,4 +1,4 @@
-package Week_04.Advanture_Game;
+package Week_04.Advanture_Game.Adenture_Game;
 
 public class SafeHouse extends NeutralZone {
     public SafeHouse(Player player) {

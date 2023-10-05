@@ -1,6 +1,4 @@
-package Week_04.Advanture_Game;
-
-import java.util.Arrays;
+package Week_04.Advanture_Game.Adenture_Game;
 
 public class Inventory {
 
