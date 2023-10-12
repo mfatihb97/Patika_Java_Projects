@@ -82,8 +82,23 @@ public class Notebook extends Product {
         int notebookStock = input.nextInt();
 
         Notebook notebookAdd = new Notebook(notebookPrice, notebookDiscount, notebookStock, notebookName, notebookBrand, notebookMemory, notebookScreenSize, notebookRam, notebookID);
-        notebookList.add(notebookAdd);
+        if (idCheckNotebook(notebookID)) {
+            System.out.println("New item has ben created");
+            notebookList.add(notebookAdd);
+        } else {
+            System.out.println("ID has already in use!");
+        }
 
+
+    }
+
+    public static boolean idCheckNotebook(int id) {
+        for (Notebook notebook : notebookList) {
+            if (notebook.getNoteBookID() == id) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static void listByBrand() {

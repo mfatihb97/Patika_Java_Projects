@@ -21,14 +21,6 @@ public class Mobile_Phone extends Product {
 
     public static void phoneOperation() {
 
-        // You can use these object as examples.
-        //Mobile_Phone mb1 = new Mobile_Phone(3199, 10, 10, "SAMSUNG GALAXY A51", "Samsung", 128, 6.5, 6, 1, 4000, "BLACK");
-        //Mobile_Phone mb2 = new Mobile_Phone(7379, 10, 10, "iPhone 11 64 GB", "Apple", 64, 6.1, 6, 2, 3000, "BLUE");
-        //Mobile_Phone mb3 = new Mobile_Phone(4000, 10, 10, "Redmi Note 10 Pro 8GB", "Xiaomi", 128, 6.5, 12, 3, 4000, "WHITE");
-        //phoneList.add(mb1);
-        //phoneList.add(mb2);
-        //phoneList.add(mb3);
-
         boolean showMenu = true;
         System.out.println("Please select the notebook operation you want to continue with :");
         while (showMenu) {
@@ -93,8 +85,23 @@ public class Mobile_Phone extends Product {
 
 
         Mobile_Phone phoneAdd = new Mobile_Phone(phonePrice, phoneDiscount, phoneStock, phoneName, phoneBrand, phoneMemory, phoneScreenSize, phoneRam, phoneID, phoneBattery, phoneColour);
-        phoneList.add(phoneAdd);
+        if (idCheckNotebook(phoneID)) {
+            System.out.println("New item has ben created");
+            phoneList.add(phoneAdd);
+        } else {
+            System.out.println("ID has already in use!");
+        }
 
+
+    }
+
+    public static boolean idCheckNotebook(int id) {
+        for (Mobile_Phone phone : phoneList) {
+            if (phone.getPhoneID() == id) {
+                return false;
+            }
+        }
+        return true;
     }
 
 
