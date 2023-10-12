@@ -85,7 +85,7 @@ public class Mobile_Phone extends Product {
 
 
         Mobile_Phone phoneAdd = new Mobile_Phone(phonePrice, phoneDiscount, phoneStock, phoneName, phoneBrand, phoneMemory, phoneScreenSize, phoneRam, phoneID, phoneBattery, phoneColour);
-        if (idCheckNotebook(phoneID)) {
+        if (idCheckPhone(phoneID)) {
             System.out.println("New item has ben created");
             phoneList.add(phoneAdd);
         } else {
@@ -95,7 +95,7 @@ public class Mobile_Phone extends Product {
 
     }
 
-    public static boolean idCheckNotebook(int id) {
+    public static boolean idCheckPhone(int id) {
         for (Mobile_Phone phone : phoneList) {
             if (phone.getPhoneID() == id) {
                 return false;
