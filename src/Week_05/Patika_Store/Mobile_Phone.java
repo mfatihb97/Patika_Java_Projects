@@ -10,7 +10,7 @@ public class Mobile_Phone extends Product {
 
     public static Scanner input = new Scanner(System.in);
 
-    private static ArrayList<Mobile_Phone> phoneList = new ArrayList<>();
+    public static ArrayList<Mobile_Phone> phoneList = new ArrayList<>();
 
     public Mobile_Phone(int price, int discountRate, int stockCount, String name, String brand, int memory, double screenSize, int RAM, int phoneID, int battery, String colour) {
         super(price, discountRate, stockCount, name, brand, memory, screenSize, RAM);

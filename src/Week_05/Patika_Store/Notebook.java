@@ -6,7 +6,7 @@ import java.util.*;
 public class Notebook extends Product {
     private int noteBookID;
     public static Scanner input = new Scanner(System.in);
-    private static ArrayList<Notebook> notebookList = new ArrayList<>();
+    public static ArrayList<Notebook> notebookList = new ArrayList<>();
 
     public Notebook(int price, int discountRate, int stockCount, String name, String brand, int memory, double screenSize, int RAM, int noteBookID) {
         super(price, discountRate, stockCount, name, brand, memory, screenSize, RAM);
