@@ -25,6 +25,7 @@ public class Notepad {
             while ((line = buffReader.readLine()) != null) {
                 System.out.println(line);
             }
+            buffReader.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
